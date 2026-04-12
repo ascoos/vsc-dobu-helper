@@ -1,0 +1,825 @@
+{
+	"Dobu: Insert DoBu Dockblock": {
+    "prefix": "@dobu-docblock-skeleton",
+    "description": "[DoBu] Insert DoBu Dockblock",
+        "body": [
+			"/*",
+            "dobu {",
+			"\t${0:}",
+            "},",
+			"*/"
+        ]
+	},
+
+	"Dobu: Insert Skeleton Ascoos": {
+    "prefix": "@dobu-skeleton-ascoos",
+    "description": "[DoBu] Insert Skeleton Ascoos",
+        "body": [
+            "ascoos {",
+			"\t${0:}",
+            "},"
+        ]
+	},
+	"Dobu: Insert Skeleton Project": {
+    "prefix": "@dobu-skeleton-project",
+    "description": "[DoBu] Insert Skeleton Project",
+        "body": [
+            "project {",
+			"\t${0:}",
+            "},"
+        ]
+	},
+	"Dobu: Insert Skeleton Example": {
+    "prefix": "@dobu-skeleton-example",
+    "description": "[DoBu] Insert Skeleton Example",
+        "body": [
+            "example {",
+			"\t${0:}",
+            "},"
+        ]
+	},
+	"Dobu: Insert Skeleton Case Study": {
+    "prefix": "@dobu-skeleton-case-study",
+    "description": "[DoBu] Insert Skeleton Case Study",
+        "body": [
+            "case-study {",
+			"\t${0:}",
+            "},"
+        ]
+	},
+	"Dobu: Insert Skeleton File": {
+    "prefix": "@dobu-skeleton-file",
+    "description": "[DoBu] Insert Skeleton File",
+        "body": [
+            "file:id(`${1:FILE-ID}`),name(`${2:${TM_FILENAME_BASE}}`) {",
+			"\t${0:}",
+            "},"
+        ]
+	},
+			
+	"Dobu: Insert Skeleton Ascoos OS Logo": {
+    "prefix": "@dobu-skeleton-ascoos-logo",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Logo",
+        "body": [
+            "logo {",
+			"\t  __ _  ___  ___ ___   ___   ___     ___   ___",
+			"\t / _` |/  / / __/ _ \\ / _ \\ /  /    / _ \\ /  /",
+			"\t| (_| |\\  \\| (_| (_) | (_) |\\  \\   | (_) |\\  \\",
+			"\t \\__,_|/__/ \\___\\___/ \\___/ /__/    \\___/ /__/",			
+            "},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Name": {
+    "prefix": "@dobu-skeleton-ascoos-name",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Name",
+        "body": [
+			"name {`ASCOOS OS`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Version": {
+    "prefix": "@dobu-skeleton-ascoos-version",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Version",
+        "body": [
+			"version {`${1:1}.${2:0}.${3:0}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Category": {
+    "prefix": "@dobu-skeleton-ascoos-category",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Category",
+        "body": [
+			"category {`Web OS`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Subcategory": {
+    "prefix": "@dobu-skeleton-ascoos-subcategory",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Subcategory",
+        "body": [
+			"subcategory {`Web5 / WebAI`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Description": {
+    "prefix": "@dobu-skeleton-ascoos-description",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Description",
+        "body": [
+			"description {`A Web 5.0 and Web AI Kernel for decentralized web and IoT applications`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Creator": {
+    "prefix": "@dobu-skeleton-ascoos-creator",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Creator",
+        "body": [
+			"creator {`Drogidis Christos`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Website": {
+    "prefix": "@dobu-skeleton-ascoos-website",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Website",
+        "body": [
+			"website {`https://www.ascoos.com`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Issues": {
+    "prefix": "@dobu-skeleton-ascoos-issues",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Issues",
+        "body": [
+			"issues {`https://issues.ascoos.com`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Support": {
+    "prefix": "@dobu-skeleton-ascoos-support",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Support",
+        "body": [
+			"support {`support@ascoos.com`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS License": {
+    "prefix": "@dobu-skeleton-ascoos-license",
+    "description": "[DoBu] Insert Skeleton Ascoos OS License",
+        "body": [
+			"license {`[Commercial] http://docs.ascoos.com/lics/ascoos/AGL.html`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Ascoos OS Copyright": {
+    "prefix": "@dobu-skeleton-ascoos-copyright",
+    "description": "[DoBu] Insert Skeleton Ascoos OS Copyright",
+        "body": [
+			"copyright {`Copyright (c) 2007 - $CURRENT_YEAR, AlexSoft Software.`},${0:}"
+        ]
+	},
+
+	"Dobu: Insert Skeleton Version": {
+    "prefix": "@dobu-skeleton-version",
+    "description": "[DoBu] Insert Skeleton Version",
+        "body": [
+			"version {`${1:1}.${2:0}.${3:0}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Build": {
+    "prefix": "@dobu-skeleton-build",
+    "description": "[DoBu] Insert Skeleton Build",
+        "body": [
+			"build {`${1:Build Number}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Source": {
+    "prefix": "@dobu-skeleton-source",
+    "description": "[DoBu] Insert Skeleton Source",
+        "body": [
+			"source {`${1:$TM_DIRECTORY}/${2:${TM_FILENAME_BASE}}.php`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton File Number": {
+    "prefix": "@dobu-skeleton-file-number",
+    "description": "[DoBu] Insert Skeleton File Number",
+        "body": [
+			"fileNo {`${1:FILE-ID}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Created": {
+    "prefix": "@dobu-skeleton-created",
+    "description": "[DoBu] Insert Skeleton Created",
+        "body": [
+			"created {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Updated": {
+    "prefix": "@dobu-skeleton-updated",
+    "description": "[DoBu] Insert Skeleton Updated",
+        "body": [
+			"updated {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Author": {
+    "prefix": "@dobu-skeleton-author",
+    "description": "[DoBu] Insert Skeleton Author",
+        "body": [
+			"author {`${1:Christos Drogidis}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Author Website": {
+    "prefix": "@dobu-skeleton-author-website",
+    "description": "[DoBu] Insert Skeleton Author Website",
+        "body": [
+			"authorSite {`${1:https://www.ascoos.com}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Support": {
+    "prefix": "@dobu-skeleton-support",
+    "description": "[DoBu] Insert Skeleton Support",
+        "body": [
+			"support {`${1:support@ascoos.com}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Package": {
+    "prefix": "@dobu-skeleton-package",
+    "description": "[DoBu] Insert Skeleton Package",
+        "body": [
+			"package:langs {",
+			"\ten {`${1:PACKAGE DESCRIPTION IN ENGLISH}`},",
+			"\tel {`${2:PACKAGE DESCRIPTION IN GREEK}`}",
+			"},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Subpackage": {
+    "prefix": "@dobu-skeleton-subpackage",
+    "description": "[DoBu] Insert Skeleton Subpackage",
+        "body": [
+			"subpackage:langs {",
+			"\ten {`${1:SUBPACKAGE DESCRIPTION IN ENGLISH}`},",
+			"\tel {`${2:SUBPACKAGE DESCRIPTION IN GREEK}`}",
+			"},${0:}"
+        ]
+	},
+
+	"Ascoos OS: Insert PHP with DoBu File Skeleton": {
+		"prefix": "php-dobu-file-skeleton",
+		"description": "[Ascoos OS] Inserts a PHP with DoBu File Skeleton",
+		"body": [
+			"<?php",
+			"/*",
+			"dobu {",
+			"\tfile:id(`${1:FILE-ID}`),name(`${2:${TM_FILENAME_BASE}}`) {",
+			"\t\tascoos {",
+			"\t\t\tlogo {`",
+			"\t\t\t\t  __ _  ___  ___ ___   ___   ___     ___   ___",
+			"\t\t\t\t / _` |/  / / __/ _ \\ / _ \\ /  /    / _ \\ /  /",
+			"\t\t\t\t| (_| |\\  \\| (_| (_) | (_) |\\  \\   | (_) |\\  \\",
+			"\t\t\t\t \\__,_|/__/ \\___\\___/ \\___/ /__/    \\___/ /__/",
+			"\t\t\t`},",
+			"\t\t\tname {`ASCOOS OS`},",
+			"\t\t\tversion {`1.0.0`},",
+			"\t\t\tcategory {`Web OS`},",
+			"\t\t\tsubcategory {`Web5 / WebAI`},",
+			"\t\t\tdescription {`A Web 5.0 and Web AI Kernel for decentralized web and IoT applications`},",
+			"\t\t\tcreator {`Drogidis Christos`},",
+			"\t\t\twebsite {`https://www.ascoos.com`},",
+			"\t\t\tissues {`https://support.ascoos.com`},",
+			"\t\t\tsupport {`support@ascoos.com`},",
+			"\t\t\tlicense {`[Commercial] http://docs.ascoos.com/lics/ascoos/AGL.html`},",
+			"\t\t\tcopyright {`Copyright (c) 2007 - $CURRENT_YEAR, AlexSoft Software.`},",
+			"\t\t},",
+			"\t\tproject {",
+			"\t\t\tpackage:langs {",
+			"\t\t\t\ten {`${3:PACKAGE DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${4:PACKAGE DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsubpackage:langs {",
+			"\t\t\t\ten {`${5:SUBPACKAGE DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${6:SUBPACKAGE DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tcategory:langs {",
+			"\t\t\t\ten {`${7:CATEGORY DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${8:CATEGORY DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsubcategory:langs {",
+			"\t\t\t\ten {`${9:SUBCATEGORY DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${10:SUBCATEGORY DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsource {`${11:$TM_DIRECTORY}/${2:${TM_FILENAME_BASE}}.php`},",
+			"\t\t\tintro:langs {",
+			"\t\t\t\ten {`${12:DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${13:DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsummary:langs {",
+			"\t\t\t\ten {`${14:DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${15:DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tdescription:langs {",
+			"\t\t\t\ten {`${16:DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${17:DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tfileNo {`${1:FILE-ID}`},",
+			"\t\t\tversion {`${18:1}.${19:0}.${20:0}`},",
+			"\t\t\tbuild {`${21:1}`},",
+			"\t\t\tcreated {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},",
+			"\t\t\tupdated {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},",
+			"\t\t\tauthor {`${22:AUTHOR NAME}`},",
+			"\t\t\tauthorSite {`${23:https://www.ascoos.com}`},",
+			"\t\t\tsupport {`${24:support@ascoos.com}`},",
+			"\t\t\tlicense {`${25|AGL (ASCOOS General License),AGL-F (ASCOOS General License - FREE),AGL-E (ASCOOS General Extension License),AGL-T (ASCOOS General Theme License),Freeware,Unlicensed,MIT,CC BY 4.0,CC BY-SA 4.0,CC BY-NC 4.0,CC BY-NC-SA 4.0,CC BY-ND 4.0,CC BY-NC-ND 4.0,CC0 1.0|}`},",
+			"\t\t\tsince {`${26:1}.${27:0}.${28:0}`},",
+			"\t\t\tsincePHP {`${29:8}.${30:4}.${31:0}`}",
+			"\t\t}",		
+			"\t}",
+			"}",
+			"*/",
+			"declare(strict_types=1);",
+			"namespace ASCOOS\\OS${34:${33|\\Extras\\\\,\\Kernel\\\\,\\Library\\\\|}${32:NAMESPACE}};",
+			"defined(\"ALEXSOFT_RUN_CMS\") or die(\"Prohibition of Access.\");",
+			"defined(\"ASCOOS_OS_RUN\") or die(\"Prohibition of Access.\");",
+			"",
+			"${0:}",
+			"?>"
+		]
+	},
+	"Dobu: Insert DoBu File Skeleton": {
+		"prefix": "@dobu-file-skeleton",
+		"description": "[Dobu] Insert DoBu File Skeleton",
+		"body": [
+			"/*",
+			"dobu {",
+			"\tfile:id(`${1:FILE-ID}`),name(`${2:${TM_FILENAME_BASE}}`) {",
+			"\t\tascoos {",
+			"\t\t\tlogo {`",
+			"\t\t\t\t  __ _  ___  ___ ___   ___   ___     ___   ___",
+			"\t\t\t\t / _` |/  / / __/ _ \\ / _ \\ /  /    / _ \\ /  /",
+			"\t\t\t\t| (_| |\\  \\| (_| (_) | (_) |\\  \\   | (_) |\\  \\",
+			"\t\t\t\t \\__,_|/__/ \\___\\___/ \\___/ /__/    \\___/ /__/",
+			"\t\t\t`},",
+			"\t\t\tname {`ASCOOS OS`},",
+			"\t\t\tversion {`1.0.0`},",
+			"\t\t\tcategory {`Web OS`},",
+			"\t\t\tsubcategory {`Web5 / WebAI`},",
+			"\t\t\tdescription {`A Web 5.0 and Web AI Kernel for decentralized web and IoT applications`},",
+			"\t\t\tcreator {`Drogidis Christos`},",
+			"\t\t\twebsite {`https://www.ascoos.com`},",
+			"\t\t\tissues {`https://support.ascoos.com`},",
+			"\t\t\tsupport {`support@ascoos.com`},",
+			"\t\t\tlicense {`[Commercial] http://docs.ascoos.com/lics/ascoos/AGL.html`},",
+			"\t\t\tcopyright {`Copyright (c) 2007 - $CURRENT_YEAR, AlexSoft Software.`},",
+			"\t\t},",
+			"\t\tproject {",
+			"\t\t\tpackage:langs {",
+			"\t\t\t\ten {`${3:PACKAGE DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${4:PACKAGE DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsubpackage:langs {",
+			"\t\t\t\ten {`${5:SUBPACKAGE DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${6:SUBPACKAGE DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tcategory:langs {",
+			"\t\t\t\ten {`${7:CATEGORY DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${8:CATEGORY DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsubcategory:langs {",
+			"\t\t\t\ten {`${9:SUBCATEGORY DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${10:SUBCATEGORY DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsource {`${11:$TM_DIRECTORY}/${2:${TM_FILENAME_BASE}}.php`},",
+			"\t\t\tintro:langs {",
+			"\t\t\t\ten {`${12:DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${13:DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsummary:langs {",
+			"\t\t\t\ten {`${14:DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${15:DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tdescription:langs {",
+			"\t\t\t\ten {`${16:DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${17:DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tfileNo {`${1:FILE-ID}`},",
+			"\t\t\tversion {`${18:1}.${19:0}.${20:0}`},",
+			"\t\t\tbuild {`${21:1}`},",
+			"\t\t\tcreated {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},",
+			"\t\t\tupdated {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},",
+			"\t\t\tauthor {`${22:AUTHOR NAME}`},",
+			"\t\t\tauthorSite {`${23:https://www.ascoos.com}`},",
+			"\t\t\tsupport {`${24:support@ascoos.com}`},",
+			"\t\t\tlicense {`${25|AGL (ASCOOS General License),AGL-F (ASCOOS General License - FREE),AGL-E (ASCOOS General Extension License),AGL-T (ASCOOS General Theme License),Freeware,Unlicensed,MIT,CC BY 4.0,CC BY-SA 4.0,CC BY-NC 4.0,CC BY-NC-SA 4.0,CC BY-ND 4.0,CC BY-NC-ND 4.0,CC0 1.0|}`},",
+			"\t\t\tsince {`${26:1}.${27:0}.${28:0}`},",
+			"\t\t\tsincePHP {`${29:8}.${30:4}.${31:0}`}",
+			"\t\t}",		
+			"\t}",
+			"}",
+			"*/",
+			"${0:}"
+		]
+	},
+
+	"Dobu: Insert DoBu Example File Skeleton": {
+		"prefix": "@dobu-file-example-skeleton",
+		"description": "[Dobu] Insert DoBu Example File Skeleton",
+		"body": [
+			"/*",
+			"dobu {",
+			"\tfile:id(`example-${1:FILE-ID}`) {",
+			"\t\tascoos {",
+			"\t\t\tlogo {`",
+			"\t\t\t\t  __ _  ___  ___ ___   ___   ___     ___   ___",
+			"\t\t\t\t / _` |/  / / __/ _ \\ / _ \\ /  /    / _ \\ /  /",
+			"\t\t\t\t| (_| |\\  \\| (_| (_) | (_) |\\  \\   | (_) |\\  \\",
+			"\t\t\t\t \\__,_|/__/ \\___\\___/ \\___/ /__/    \\___/ /__/",
+			"\t\t\t`},",
+			"\t\t\tname {`ASCOOS OS`},",
+			"\t\t\tversion {`1.0.0`},",
+			"\t\t},",
+			"\t\texample {",
+			"\t\t\tclass {`${2:CLASS`},",
+			"\t\t\tmethods {`${3:METHODS`},",
+			"\t\t\tsource {`${11:$TM_DIRECTORY}/${2:${TM_FILENAME_BASE}}.php`},",
+			"\t\t\tcategory:langs {",
+			"\t\t\t\ten {`${7:CATEGORY DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${8:CATEGORY DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsubcategory:langs {",
+			"\t\t\t\ten {`${9:SUBCATEGORY DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${10:SUBCATEGORY DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tsummary:langs {",
+			"\t\t\t\ten {`${14:DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${15:DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tdesc:langs {",
+			"\t\t\t\ten {`${16:DESCRIPTION IN ENGLISH}`},",
+			"\t\t\t\tel {`${17:DESCRIPTION IN GREEK}`}",
+			"\t\t\t},",
+			"\t\t\tauthor {`${22:AUTHOR NAME}`},",
+			"\t\t\tsince {`${26:1}.${27:0}.${28:0}`},",
+			"\t\t\tsincePHP {`${29:8}.${30:4}.${31:0}`}",
+			"\t\t}",		
+			"\t}",
+			"}",
+			"*/",
+			"${0:}"
+		]
+	},
+
+	"Dobu: Insert class skeleton": {
+    "prefix": "@dobu-class-skeleton",
+    "description": "[DoBu] Insert class skeleton",
+        "body": [
+			"dobu {",
+    		"class:id(``),name(``),extends(``),implements(``),namespace(`ASCOOS\\OS\\`),hierarchy(`TObject, `),version(`1.0.0`),since(`1.0.0`),sincePHP(`8.4.0`) {",
+		    "\tcategory:langs {",
+		    "\t\ten {``},",
+        	"\t\tel {``}",
+		    "\t},",
+        	"\tintro:langs {",
+		    "\t\ten {``},",
+        	"\t\tel {``}",
+        	"\t},",
+		    "\tsummary:langs {",
+        	"\t\ten {``},",
+		    "\t\tel {``}",
+        	"\t},",
+		    "\tdesc:langs {",
+        	"\t\ten {``},",
+		    "\t\tel {``}",
+        	"\t},",
+		    "\tmethods:active(`idx,toc`) {",
+        	"\t\tmethod:id(`construct`),name(`__construct`),syntax(`__construct(array $properties = [])`),return(`void`),langs {",
+            "\t\t\ten {`Initializes the class with an array, and optional properties.`},",
+		    "\t\t\tel {`Αρχικοποιεί την κλάση με έναν πίνακα και προαιρετικές ιδιότητες.`}",
+        	"\t\t},",
+		    "\t\tmethod:id(`getinstance`),name(`getInstance`),syntax(`&getInstance(array $properties = []): TMyClass`),return(`TMyClass&`),langs {",
+        	"\t\t\ten {`We see if the object is already loaded, otherwise we create a new load of the object`},",
+            "\t\t\tel {`Βλέπουμε εάν υπάρχει ήδη φορτωμένο το αντικείμενο αλλιώς δημιουργούμε μια νέα φόρτωση του αντικειμένου`}",
+		    "\t\t},",
+			"\t\t${0:}",
+        	"\t}",
+    		"}"
+        ]
+	},
+
+
+	"Dobu: Insert methods in class": {
+    "prefix": "@dobu-class-methods",
+    "description": "[DoBu] Insert methods in class",
+        "body": [
+            "methods:active(`idx,toc`) {",
+            "\tmethod:id(`${1:ID'}`),name(`${2:ΝΑΜΕ}`),syntax(`${3:SYNTAX}`),return(`${4:RETURN}`),langs {",
+            "\t\ten {`${5:EN}`},",
+            "\t\tel {`${6:EL}`}",
+            "\t},",
+            "},",
+            "${0:}"
+        ]
+	},
+
+	"Dobu: Insert method in class": {
+    "prefix": "@dobu-class-method",
+    "description": "[DoBu] Insert method in class",
+    "body": [
+        "method:id(`${1:ID'}`),name(`${2:ΝΑΜΕ}`),syntax(`${3:SYNTAX}`),return(`${4:RETURN}`),langs {",
+        "\ten {`${5:EN}`},",
+        "\tel {`${6:EL}`}",
+        "},",
+        "${0:}"
+    ]
+	},
+
+	"Dobu: Insert Constant Skeleton": {
+    "prefix": "@dobu-constant-skeleton",
+    "description": "[DoBu] Insert Constant skeleton",
+    "body": [
+        "dobu {",
+        "\tconstant:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),since(`1.0.0`),sincePHP(`8.4.0`) {",
+
+        "\t\tcategory:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "\t\tintro:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "\t\tsummary:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "\t\tdesc:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t}",
+        "\t}${0:}",
+        "}"
+        ]
+	},
+
+	"Dobu: Insert property skeleton": {
+    "prefix": "@dobu-property-skeleton",
+    "description": "[DoBu] Insert property skeleton",
+    "body": [
+        "dobu {",
+        "\tproperty:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),since(`1.0.0`),sincePHP(`8.4.0`) {",
+
+        "\t\tcategory:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "\t\tintro:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "\t\tsummary:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "\t\tdesc:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t}",
+        "\t}${0:}",
+        "}"
+        ]
+	},
+
+	"Dobu: Insert method skeleton": {
+    "prefix": "@dobu-method-skeleton",
+    "description": "[DoBu] Insert method skeleton",
+    "body": [
+        "dobu {",
+        "\tmethod:classid(``),id(``),name(``),syntax(``),return(``),version(`1.0.0`),build(``),sincePHP(`8.4.0`) {",
+        "\t\tcategory:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "\t\tintro:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "\t\tsummary:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "\t\tdesc:langs {",
+        "\t\t\ten {``},",
+        "\t\t\tel {``}",
+        "\t\t},",
+        "${0:}",
+        "\t\treturn:type(`void`),langs {",
+        "\t\t\ten {`It doesn't return anything.`},",
+        "\t\t\tel {`Δεν επιστρέφει τίποτα.`}",
+        "\t\t},",
+        "\t\tthrows:types(`none`),langs {",
+        "\t\t\ten {`It does not implement any exceptions.`},",
+        "\t\t\tel {`Δεν υλοποιεί καμία εξαίρεση.`}",
+        "\t\t},",
+        "\t},",
+        "}"
+        ]
+	},
+
+	"Dobu: Insert params in method skeleton": {
+    "prefix": "@dobu-params-method-skeleton",
+    "description": "[DoBu] Insert params in method skeleton",
+    "body": [
+        "params:active(`table:{name,type,langs,default}`) {",
+        "\tparam:id(`${1:Param ID}`),name(`${2:Param Name}`),type(`${3:Type}`),default(`${4:Default}`),langs {",
+        "\t\ten {`${5:Parameter description in English}`},",
+        "\t\tel {`${6:Περιγραφή παραμέτρου στα Ελληνικά}`}",
+        "\t},",
+        "\t${0:}",
+        "},"
+        ]
+	},
+	"Dobu: Insert param in method skeleton": {
+    "prefix": "@dobu-param-method-skeleton",
+    "description": "[DoBu] Insert param in method skeleton",
+    "body": [
+        "param:id(`${1:Param ID}`),name(`${2:Param Name}`),type(`${3:Type}`),default(`${4:Default}`),langs {",
+        "\ten {`${5:Parameter description in English}`},",
+        "\tel {`${6:Περιγραφή παραμέτρου στα Ελληνικά}`}",
+        "},",
+        "${0:}"
+        ]
+	},
+	"Dobu: Insert example in method skeleton": {
+    "prefix": "@dobu-example-method-skeleton",
+    "description": "[DoBu] Insert example in method skeleton",
+    "body": [
+        "example:type(`pre,code`),langs {",
+        "\tall {``}",
+        "},",
+        "${0:}"
+        ]
+	},
+	"Dobu: Insert keys": {
+    "prefix": "@dobu-keys",
+    "description": "[DoBu] Insert Keys",
+    "body": [
+        "keys:active(`dl`) {",
+        "\tkey:name(``),langs {",
+        "\t\ten {``},",
+        "\t\tel {``}",
+        "\t}${0:}",
+        "},"
+        ]
+	},
+
+	"Dobu: Insert key": {
+    "prefix": "@dobu-key",
+    "description": "[DoBu] Insert Key",
+    "body": [
+        "key:name(``),langs {",
+        "\ten {``},",
+        "\tel {``}",
+        "},${0:}"
+        ]
+	},
+
+	"Dobu: Insert Notes": {
+    "prefix": "@dobu-notes",
+    "description": "[DoBu] Insert Notes",
+    "body": [
+        "notes:langs {",
+        "\ten {``},",
+        "\tel {``}",
+        "},${0:}"
+        ]
+	},
+
+	"Dobu: Insert Return Method": {
+    "prefix": "@dobu-return-method",
+    "description": "[DoBu] Insert Return Method",
+    "body": [
+        "return:type(`void`),langs {",
+        "\ten {`Does not return anything.`},",
+        "\tel {`Δεν επιστρέφει τίποτα.`}",
+        "},${0:}"
+        ]
+	},
+
+	"Dobu: Insert See Also": {
+    "prefix": "@dobu-see-also",
+    "description": "[DoBu] Insert See Also",
+    "body": [
+        "seeAlso:active(`ul,link`) {",
+        "\tclass:name(``),langs {",
+        "\t\ten {``},",
+        "\t\tel {``}",
+        "\t}${0:}",
+        "},"
+        ]
+	},
+	"Dobu: Insert See Also Item": {
+    "prefix": "@dobu-see-also-item",
+    "description": "[DoBu] Insert See Also Item",
+    "body": [
+        "class:name(``),langs {",
+        "\ten {``},",
+        "\tel {``}",
+        "},${0:}"
+        ]
+	},
+
+	"Dobu: Insert Throws": {
+    "prefix": "@dobu-throws",
+    "description": "[DoBu] Insert Throws",
+    "body": [
+        "throws:types(`${1:none}`),langs {",
+        "\ten {`${2:It does not implement any exceptions.}`},",
+        "\tel {`${3:Δεν υλοποιεί καμία εξαίρεση.}`}",
+        "},${0:}"
+        ]
+	},
+	"Dobu: Insert agnostic metakey in method skeleton": {
+    "prefix": "@dobu-agnostic-method-skeleton",
+    "description": "[DoBu] Insert agnostic metakey in method skeleton",
+    "body": [
+        "${1:Metakey}:active(``),langs {",
+        "\ten {`${2:Metakey description in English}`},",
+        "\tel {`${3:Περιγραφή Metakey στα Ελληνικά}`}",
+        "},${0:}"
+        ]
+	},
+
+	"Dobu: Insert Category": {
+    "prefix": "@dobu-category",
+    "description": "[DoBu] Insert Category",
+    "body": [
+        "category:langs {",
+        "\ten {`${1:Category description in English}`},",
+        "\tel {`${2:Περιγραφή κατηγορίας στα Ελληνικά}`}",
+        "},${0:}"
+        ]
+	},
+	"Dobu: Insert Subcategory": {
+    "prefix": "@dobu-subcategory",
+    "description": "[DoBu] Insert Subcategory",
+    "body": [
+        "subcategory:langs {",
+        "\ten {`${1:Subcategory description in English}`},",
+        "\tel {`${2:Περιγραφή υποκατηγορίας στα Ελληνικά}`}",
+        "},${0:}"
+        ]
+	},
+	"Dobu: Insert Introduction": {
+    "prefix": "@dobu-intro",
+    "description": "[DoBu] Insert Introduction",
+    "body": [
+        "intro:langs {",
+        "\ten {`${1:Introduction in English}`},",
+        "\tel {`${2:Εισαγωγή στα Ελληνικά}`}",
+        "},${0:}"
+        ]
+	},
+	"Dobu: Insert Summary": {
+    "prefix": "@dobu-summary",
+    "description": "[DoBu] Insert Summary",
+    "body": [
+        "summary:langs {",
+        "\ten {`${1:Summary in English}`},",
+        "\tel {`${2:Περίληψη στα Ελληνικά}`}",
+        "},${0:}"
+        ]
+	},
+	"Dobu: Insert Description": {
+    "prefix": "@dobu-desc",
+    "description": "[DoBu] Insert Description",
+    "body": [
+        "desc:langs {",
+        "\ten {`${1:Description in English}`},",
+        "\tel {`${2:Περιγραφή στα Ελληνικά}`}",
+        "},${0:}"
+        ]
+	},
+
+	"Dobu: Insert Theory": {
+    "prefix": "@dobu-theory",
+    "description": "[DoBu] Insert Theory",
+    "body": [
+        "theory:langs {",
+        "\ten {`${1:Theory description in English}`},",
+        "\tel {`${2:Περιγραφή Θεωρίας στα Ελληνικά}`}",
+        "},${0:}"
+        ]
+	},
+
+	"Dobu: Insert Skeleton License": {
+    "prefix": "@dobu-skeleton-license",
+    "description": "[DoBu] Insert Skeleton License",
+        "body": [
+			"license {`${1|AGL (ASCOOS General License),AGL-F (ASCOOS General License - FREE),AGL-E (ASCOOS General Extension License),AGL-T (ASCOOS General Theme License),Freeware,Unlicensed,MIT,CC BY 4.0,CC BY-SA 4.0,CC BY-NC 4.0,CC BY-NC-SA 4.0,CC BY-ND 4.0,CC BY-NC-ND 4.0,CC0 1.0|}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Since": {
+    "prefix": "@dobu-skeleton-since",
+    "description": "[DoBu] Insert Skeleton Since",
+        "body": [
+			"since {`${1:1}.${2:0}.${3:0}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton SincePHP": {
+    "prefix": "@dobu-skeleton-since-php",
+    "description": "[DoBu] Insert Skeleton SincePHP",
+        "body": [
+			"sincePHP {`${1:8}.${2:4}.${3:0}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Used Class": {
+    "prefix": "@dobu-skeleton-used-class",
+    "description": "[DoBu] Insert Skeleton Used Class",
+        "body": [
+			"class {`${1:Class}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Used Methods": {
+    "prefix": "@dobu-skeleton-used-methods",
+    "description": "[DoBu] Insert Skeleton Used Methods",
+        "body": [
+			"methods {`${1:MethodsClass}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Formula": {
+    "prefix": "@dobu-formula",
+    "description": "[DoBu] Insert Formula",
+    	"body": [
+        	"formula:type(`${1|latex,mathml|}`),value(`${2:Math Formula}`),analysis(`${3:Formula Analysis}`),langs {",
+	        "\ten {`${4:Formula Description in English}`},",
+    	    "\tel {`${5:Περιγραφή του μαθηματικού τύπου στα Ελληνικά}`}",
+        	"},${0:}"
+        ]
+	}
+}
