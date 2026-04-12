@@ -9,6 +9,10 @@
 [![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 [![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://github.com/ascoos/dobu)
 [![License: AGL](https://img.shields.io/badge/license-AGL-purple.svg)](http://docs.ascoos.com/lics/ascoos/AGL.html)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/ascoos/vsc-dobu-helper/total?color=%230E80C0) 
+![GitHub Release](https://img.shields.io/github/v/release/ascoos/vsc-dobu-helper) 
+![GitHub Release Date](https://img.shields.io/github/release-date/ascoos/vsc-dobu-helper?color=%230E80C0)
+![GitHub repo size](https://img.shields.io/github/repo-size/ascoos/vsc-dobu-helper) 
 
 **Ascoos DoBu Helper** is the official snippet package for **DoBu** inside Visual Studio Code.
 
