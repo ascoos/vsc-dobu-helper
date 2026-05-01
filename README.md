@@ -7,7 +7,7 @@
 **Official VS Code Snippet Extension for DoBu — Documentation Builder for Ascoos OS**
 
 [![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
-[![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://github.com/ascoos/dobu)
+[![Version](https://img.shields.io/badge/version-0.0.2-blue.svg)](https://github.com/ascoos/dobu)
 [![License: AGL](https://img.shields.io/badge/license-AGL-purple.svg)](http://docs.ascoos.com/lics/ascoos/AGL.html)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/ascoos/vsc-dobu-helper/total?color=%230E80C0) 
 ![GitHub Release](https://img.shields.io/github/v/release/ascoos/vsc-dobu-helper) 
