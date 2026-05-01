@@ -6,7 +6,7 @@
 	"description": "Helper for Documentation Builder",
 	"icon": "images/icon.png",
 	"license": "AGL (Ascoos General License)",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.111.0"
 	},
@@ -62,8 +62,7 @@
 		"url": "https://github.com/ascoos/dobu.git"
 	},
 	"bugs": {
-		"url": "https://issues.ascoos.com",
-		"email": "support@ascoos.com"
+		"url": "https://issues.ascoos.com"
 	},
 	"readme": "https://github.com/ascoos/dobu/blob/main/README.md",
 	"homepage": "https://www.ascoos.com"

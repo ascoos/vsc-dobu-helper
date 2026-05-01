@@ -48,10 +48,10 @@
 ### Λήψη & Εγκατάσταση
 
 1. Πήγαινε στη σελίδα [Releases](https://github.com/ascoos/vsc-dobu-helper/releases)
-2. Κατέβασε το πιο πρόσφατο αρχείο, π.χ. `ascoos-dobu-helper-0.0.1.vsix`
+2. Κατέβασε το πιο πρόσφατο αρχείο, π.χ. `ascoos-dobu-helper-x.x.x.vsix`
 3. Άνοιξε το Visual Studio Code
 4. Πήγαινε στο Extensions (`Ctrl+Shift+X`)
-5. Κάνε κλικ στο **...** πάνω δεξιά → **Install from VSIX...**
+5. Κάνε κλικ στο **`...`** πάνω δεξιά → **`Install from VSIX...`**
 6. Επίλεξε το αρχείο `.vsix` που κατέβασες
 
 > **Σημείωση**: Σε επόμενες εκδόσεις θα είναι διαθέσιμο και απευθείας από το VS Code Marketplace.

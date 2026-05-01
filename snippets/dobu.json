@@ -405,8 +405,8 @@
 			"\t\t\tversion {`1.0.0`},",
 			"\t\t},",
 			"\t\texample {",
-			"\t\t\tclass {`${2:CLASS`},",
-			"\t\t\tmethods {`${3:METHODS`},",
+			"\t\t\tclass {`${2:CLASS}`},",
+			"\t\t\tmethods {`${3:METHODS}`},",
 			"\t\t\tsource {`${11:$TM_DIRECTORY}/${2:${TM_FILENAME_BASE}}.php`},",
 			"\t\t\tcategory:langs {",
 			"\t\t\t\ten {`${7:CATEGORY DESCRIPTION IN ENGLISH}`},",
@@ -440,7 +440,7 @@
     "description": "[DoBu] Insert class skeleton",
         "body": [
 			"dobu {",
-    		"class:id(``),name(``),extends(``),implements(``),namespace(`ASCOOS\\OS\\`),hierarchy(`TObject, `),version(`1.0.0`),since(`1.0.0`),sincePHP(`8.4.0`) {",
+    		"class:id(``),name(``),extends(``),implements(``),namespace(`ASCOOS\\OS\\`),hierarchy(`TObject, `),version(`1.0.0`),build(``),since(`1.0.0`),sincePHP(`8.4.0`) {",
 		    "\tcategory:langs {",
 		    "\t\ten {``},",
         	"\t\tel {``}",
@@ -470,15 +470,39 @@
         	"\t}",
     		"}"
         ]
+    },
+       
+	"Dobu: Insert traits in class": {
+        "prefix": "@dobu-class-traits",
+        "description": "[DoBu] Insert traits in class",
+        "body": [
+            "traits:active(`list`) {",
+            "\ttrait:id(`${1:ID}`),name(`${2:NAME}`),langs {",
+            "\t\ten {`${3:EN}`},",
+            "\t\tel {`${4:EL}`}",
+            "\t},",
+            "},",
+            "${0:}"
+        ]
+	},
+	"Dobu: Insert triat in class": {
+        "prefix": "@dobu-class-trait",
+        "description": "[DoBu] Insert trait in class",
+        "body": [
+            "trait:id(`${1:ID}`),name(`${2:NAME}`),langs {",
+            "\ten {`${3:EN}`},",
+            "\tel {`${4:EL}`}",
+            "},",
+            "${0:}"
+        ]
 	},
 
-
 	"Dobu: Insert methods in class": {
-    "prefix": "@dobu-class-methods",
-    "description": "[DoBu] Insert methods in class",
+        "prefix": "@dobu-class-methods",
+        "description": "[DoBu] Insert methods in class",
         "body": [
             "methods:active(`idx,toc`) {",
-            "\tmethod:id(`${1:ID'}`),name(`${2:ΝΑΜΕ}`),syntax(`${3:SYNTAX}`),return(`${4:RETURN}`),langs {",
+            "\tmethod:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),syntax(`${3:SYNTAX}`),return(`${4:RETURN}`),langs {",
             "\t\ten {`${5:EN}`},",
             "\t\tel {`${6:EL}`}",
             "\t},",
@@ -486,26 +510,49 @@
             "${0:}"
         ]
 	},
-
 	"Dobu: Insert method in class": {
-    "prefix": "@dobu-class-method",
-    "description": "[DoBu] Insert method in class",
-    "body": [
-        "method:id(`${1:ID'}`),name(`${2:ΝΑΜΕ}`),syntax(`${3:SYNTAX}`),return(`${4:RETURN}`),langs {",
-        "\ten {`${5:EN}`},",
-        "\tel {`${6:EL}`}",
-        "},",
-        "${0:}"
-    ]
+        "prefix": "@dobu-class-method",
+        "description": "[DoBu] Insert method in class",
+        "body": [
+            "method:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),syntax(`${3:SYNTAX}`),return(`${4:RETURN}`),langs {",
+            "\ten {`${5:EN}`},",
+            "\tel {`${6:EL}`}",
+            "},",
+            "${0:}"
+        ]
 	},
 
+    
+	"Dobu: Insert constants in class": {
+        "prefix": "@dobu-class-constants",
+        "description": "[DoBu] Insert constants in class",
+        "body": [
+            "constants:active(`table:{name,value,langs}`) {",
+            "\tconst:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),value(`${3:VALUE}`),langs {",
+            "\t\ten {`${4:EN}`},",
+            "\t\tel {`${5:EL}`}",
+            "\t},",
+            "},",
+            "${0:}"
+        ]
+	},
+	"Dobu: Insert constant in class": {
+        "prefix": "@dobu-class-constant",
+        "description": "[DoBu] Insert constant in class",
+        "body": [
+            "const:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),value(`${3:VALUE}`),langs {",
+            "\ten {`${4:EN}`},",
+            "\tel {`${5:EL}`}",
+            "},",
+            "${0:}"
+        ]
+	},
 	"Dobu: Insert Constant Skeleton": {
     "prefix": "@dobu-constant-skeleton",
     "description": "[DoBu] Insert Constant skeleton",
     "body": [
         "dobu {",
         "\tconstant:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),since(`1.0.0`),sincePHP(`8.4.0`) {",
-
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -527,13 +574,53 @@
         ]
 	},
 
+    
+	"Dobu: Insert properties in class": {
+        "prefix": "@dobu-class-properties",
+        "description": "[DoBu] Insert properties in class",
+        "body": [
+            "properties:active(`table:{name,access,type,default,langs}`) {",
+            "\tproperty:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),access(`${3:|private,protected,public|}`),type(`${4:|NULL,array,bool,callable,int,false,float,iterable,mixed,never,object,string,true,void|}`)${5:default(``)} {",
+            "\t\tlangs {",
+            "\t\t\ten {`${7:EN}`},",
+            "\t\t\tel {`${8:EL}`}",
+            "\t\t},",
+            "${9:\t\tkeys:active(`dl`) {",
+            "\t\t\tkey:name(``),value(``),langs {",
+            "\t\t\t\ten {``},",
+            "\t\t\t\tel {``}",
+            "\t\t\t},",
+            "\t\t},}",
+            "\t},",
+            "},",
+            "${0:}"
+        ]
+	},
+	"Dobu: Insert property in class": {
+        "prefix": "@dobu-class-property",
+        "description": "[DoBu] Insert property in class",
+        "body": [
+            "property:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),access(`${3:|private,protected,public|}`),type(`${4:|NULL,array,bool,int,float,string|}`)${5:default(`${6:ΝΑΜΕ}`)} {",
+            "\tlangs {",
+            "\t\ten {`${7:EN}`},",
+            "\t\tel {`${8:EL}`}",
+            "\t},",
+            "${9:\tkeys:active(`dl`) {",
+            "\t\tkey:name(``),value(``),langs {",
+            "\t\t\ten {``},",
+            "\t\t\tel {``}",
+            "\t\t},",
+            "\t},}",
+            "},",
+            "${0:}"
+        ]
+	},
 	"Dobu: Insert property skeleton": {
     "prefix": "@dobu-property-skeleton",
     "description": "[DoBu] Insert property skeleton",
     "body": [
         "dobu {",
         "\tproperty:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),since(`1.0.0`),sincePHP(`8.4.0`) {",
-
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -554,6 +641,7 @@
         "}"
         ]
 	},
+
 
 	"Dobu: Insert method skeleton": {
     "prefix": "@dobu-method-skeleton",
@@ -821,5 +909,146 @@
     	    "\tel {`${5:Περιγραφή του μαθηματικού τύπου στα Ελληνικά}`}",
         	"},${0:}"
         ]
+	},
+
+	"Dobu: Insert Skeleton Examples": {
+    "prefix": "@dobu-skeleton-examples",
+    "description": "[DoBu] Insert Skeleton Examples",
+    	"body": [
+            "examples:type(``)",
+            "${1:\tlink(`${2:Example Link}`),langs {",
+            "\t\ten {`${3:Description of the example link in English}`},",
+            "\t\tel {`${4:Περιγραφή του συνδέσμου παραδείγματος στα Ελληνικά}`}",
+            "\t},}",
+        	"\texample:type(`pre,code`)${5:,pl(`php`)},langs {",
+	        "\t\tall {``}",
+        	"\t},",
+            "}",
+            "${0:}"
+        ]
+	},
+	"Dobu: Insert Link": {
+    "prefix": "@dobu-link",
+    "description": "[DoBu] Insert Link",
+    	"body": [
+            "link(`${1:Url Link}`),langs {",
+            "\ten {`${2:Description of the link in English}`},",
+            "\tel {`${3:Περιγραφή του συνδέσμου στα Ελληνικά}`}",
+            "},",
+            "${0:}"
+        ]
+	},
+	"Dobu: Insert Link All": {
+    "prefix": "@dobu-link-all",
+    "description": "[DoBu] Insert Link All",
+    	"body": [
+            "link(`${1:Url Link}`),langs {all {`${2:Description of the link}`}},",
+            "${0:}"
+        ]
+	},
+
+	"Dobu: Insert References": {
+    "prefix": "@dobu-references",
+    "description": "[DoBu] Insert References",
+    "body": [
+        "references:type(`ul`),langs {",
+        "\tlink(`${1:Url Link}`),langs {",
+        "\t\ten {`${2:Description of the link in English}`},",
+        "\t\tel {`${3:Περιγραφή του συνδέσμου στα Ελληνικά}`}",
+        "\t},",
+        "},${0:}"
+        ]
+	},
+	"Dobu: Insert References All": {
+    "prefix": "@dobu-references-all",
+    "description": "[DoBu] Insert References All",
+    "body": [
+        "references:type(`ul`),langs {",
+        "link(`${1:Url Link}`),langs{all {`${2:Text}`}},",
+        "},${0:}"
+        ]
+	},
+	"Dobu: Insert See": {
+    "prefix": "@dobu-see",
+    "description": "[DoBu] Insert See",
+    "body": [
+        "see:type(`ul`),langs {",
+        "\tlink(`${1:Url Link}`),langs {",
+        "\t\ten {`${2:Description of the link in English}`},",
+        "\t\tel {`${3:Περιγραφή του συνδέσμου στα Ελληνικά}`}",
+        "\t},",
+        "},${0:}"
+        ]
+	},
+	"Dobu: Insert See All": {
+    "prefix": "@dobu-see-all",
+    "description": "[DoBu] Insert See All",
+    "body": [
+        "see:type(`ul`),langs {",
+        "link(`${1:Url Link}`),langs{all {`${2:Text}`}},",
+        "},${0:}"
+        ]
+	},
+
+	"Dobu: Insert Skeleton Language": {
+    "prefix": "@dobu-skeleton-lang",
+    "description": "[DoBu] Insert Skeleton Language",
+        "body": [
+        "langs {",
+        "\ten {`${1:Description in English}`},",
+        "\tel {`${2:Περιγραφή στα Ελληνικά}`}",
+        "},${0:}"
+        ]
+	},
+    "Dobu: Insert Language": {
+    "prefix": "@dobu-lang",
+        "description": "[DoBu] Insert Language",
+        "body": [
+            "${1:|af {`Beskrywing in Afrikaans`},",
+            "ar {`الوصف باللغة العربية`},",
+            "bg {`Описание на български`},",
+            "cs {`Popis v češtině`},",
+            "da {`Beskrivelse på dansk`},",
+            "de {`Beschreibung auf Deutsch`},",
+            "el {`Περιγραφή στα Ελληνικά`},",
+            "en {`Description in English`},",
+            "es {`Descripción en español`},",
+            "et {`Kirjeldus eesti keeles`},",
+            "fi {`Kuvaus suomeksi`},",
+            "fr {`Description en français`},",
+            "he {`תיאור בעברית`},",
+            "hi {`विवरण हिंदी में`},",
+            "hu {`Leírás magyarul`},",
+            "id {`Deskripsi dalam bahasa Indonesia`},",
+            "it {`Descrizione in italiano`},",
+            "ja {`日本語での説明`},",
+            "ko {`한국어 설명`},",
+            "lt {`Aprašymas lietuvių kalba`},",
+            "lv {`Apraksts latviešu valodā`},",
+            "nl {`Beschrijving in het Nederlands`},",
+            "no {`Beskrivelse på norsk`},",
+            "pl {`Opis po polsku`},",
+            "pt {`Descrição em português`},",
+            "ro {`Descriere în română`},",
+            "ru {`Описание на русском`},",
+            "sk {`Popis v slovenčine`},",
+            "sl {`Opis v slovenščini`},",
+            "sv {`Beskrivning på svenska`},",
+            "th {`คำอธิบายเป็นภาษาไทย`},",
+            "tr {`Türkçe açıklama`},",
+            "uk {`Опис українською`},",
+            "vi {`Mô tả bằng tiếng Việt`},",
+            "zh {`中文说明`},|",
+            "},${0:}"
+        ]
+    },
+	"Dobu: Insert All": {
+    "prefix": "@dobu-all",
+    "description": "[DoBu] Insert All",
+        "body": [
+			"all {`${1:Text}`}",
+            "${0:}"
+        ]
 	}
+                
 }

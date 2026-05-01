@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.2] - 2026-05-01
+
+## Added
+- Supported Metakeys: 
+    - Examples, 
+    - Link, 
+    - Constants in class skeleton
+    - Properties on class skeleton
+    - Traits
+
+---
+
 ## [0.0.1] - 2026-04-12
 
 ### Added
