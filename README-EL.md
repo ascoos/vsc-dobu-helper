@@ -1,4 +1,4 @@
-![DoBu](https//cdn.ascoos.com/images/dobu/dobu-logo-2.webp)
+![DoBu Logo](https://cdn.ascoos.com/images/dobu/dobu-logo-2.webp)
 
 # Ascoos DoBu Helper
 
