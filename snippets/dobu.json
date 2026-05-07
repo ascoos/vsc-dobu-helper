@@ -1,12 +1,12 @@
 {
-	"Dobu: Insert DoBu Dockblock": {
+	"Dobu: Insert DoBu Docblock": {
     "prefix": "@dobu-docblock-skeleton",
-    "description": "[DoBu] Insert DoBu Dockblock",
+    "description": "[DoBu] Insert DoBu Docblock",
         "body": [
 			"/*",
             "dobu {",
 			"\t${0:}",
-            "},",
+            "}",
 			"*/"
         ]
 	},
@@ -439,8 +439,9 @@
     "prefix": "@dobu-class-skeleton",
     "description": "[DoBu] Insert class skeleton",
         "body": [
+            "/*",
 			"dobu {",
-    		"\tclass:id(``),name(``),extends(``),implements(``),namespace(`ASCOOS\\OS\\`),hierarchy(`TObject, `),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`AGL (Ascoos General License)`),difficulty(`1`) {",
+    		"\tclass:id(``),name(``),extends(``),implements(``),namespace(`ASCOOS\\OS\\`),hierarchy(`TObject, `),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
 		    "\t\tcategory:langs {",
 		    "\t\t\ten {``},",
         	"\t\t\tel {``}",
@@ -469,7 +470,8 @@
 			"\t\t\t${0:}",
         	"\t\t}",
     		"\t}",
-            "}"
+            "}",
+            "*/"
         ]
     },
        
@@ -553,7 +555,7 @@
     "description": "[DoBu] Insert Constant skeleton",
     "body": [
         "dobu {",
-        "\tconstant:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`AGL (Ascoos General License)`),difficulty(`1`) {",
+        "\tconstant:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -581,17 +583,17 @@
         "description": "[DoBu] Insert properties in class",
         "body": [
             "properties:active(`table:{name,access,type,default,langs}`) {",
-            "\tproperty:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),access(`${3:|private,protected,public|}`),type(`${4:|NULL,array,bool,callable,int,false,float,iterable,mixed,never,object,string,true,void|}`)${5:default(``)} {",
+            "\tproperty:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),access(`${3|private,protected,public|}`),type(`${4|NULL,array,bool,callable,int,false,float,iterable,mixed,never,object,string,true,void|}`)${5:default(``)} {",
             "\t\tlangs {",
             "\t\t\ten {`${7:EN}`},",
             "\t\t\tel {`${8:EL}`}",
             "\t\t},",
             "${9:\t\tkeys:active(`dl`) {",
             "\t\t\tkey:name(``),value(``),langs {",
-            "\t\t\t\ten {``},",
-            "\t\t\t\tel {``}",
-            "\t\t\t},",
-            "\t\t},}",
+            "\t\t\t\ten {``\\},",
+            "\t\t\t\tel {``\\},",
+            "\t\t\t\\},",
+            "\t\t\\},}",
             "\t},",
             "},",
             "${0:}"
@@ -601,27 +603,29 @@
         "prefix": "@dobu-class-property",
         "description": "[DoBu] Insert property in class",
         "body": [
-            "property:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),access(`${3:|private,protected,public|}`),type(`${4:|NULL,array,bool,int,float,string|}`)${5:default(`${6:ΝΑΜΕ}`)} {",
+            "property:id(`${1:ID}`),name(`${2:ΝΑΜΕ}`),access(`${3|private,protected,public|}`),type(`${4|NULL,array,bool,callable,int,false,float,iterable,mixed,never,object,string,true,void|}`)${5:default(`${6:ΝΑΜΕ}`)} {",
             "\tlangs {",
             "\t\ten {`${7:EN}`},",
             "\t\tel {`${8:EL}`}",
             "\t},",
-            "${9:\tkeys:active(`dl`) {",
-            "\t\tkey:name(``),value(``),langs {",
-            "\t\t\ten {``},",
-            "\t\t\tel {``}",
-            "\t\t},",
-            "\t},}",
+            "${9:\t\tkeys:active(`dl`) {",
+            "\t\t\tkey:name(``),value(``),langs {",
+            "\t\t\t\ten {``\\},",
+            "\t\t\t\tel {``\\},",
+            "\t\t\t\\},",
+            "\t\t\\},}",
+            "\t},",
             "},",
             "${0:}"
         ]
 	},
+
 	"Dobu: Insert property skeleton": {
     "prefix": "@dobu-property-skeleton",
     "description": "[DoBu] Insert property skeleton",
     "body": [
         "dobu {",
-        "\tproperty:classid(``),id(``),name(``),access(`protected`),type(``),default(``),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`AGL (Ascoos General License)`),difficulty(`1`) {",
+        "\tproperty:classid(``),id(``),name(``),access(`protected`),type(``),default(``),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -649,7 +653,7 @@
     "description": "[DoBu] Insert method skeleton",
     "body": [
         "dobu {",
-        "\tmethod:classid(``),id(``),name(``),syntax(``),return(``),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`AGL (Ascoos General License)`),difficulty(`1`) {",
+        "\tmethod:classid(``),id(``),name(``),syntax(``),return(``),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
