@@ -1002,10 +1002,10 @@
         ]
 	},
     "Dobu: Insert Language": {
-    "prefix": "@dobu-lang",
+        "prefix": "@dobu-lang",
         "description": "[DoBu] Insert Language",
         "body": [
-            "${1:|af {`Beskrywing in Afrikaans`},ar {`الوصف باللغة العربية`},bg {`Описание на български`},cs {`Popis v češtině`},da {`Beskrivelse på dansk`},de {`Beschreibung auf Deutsch`},el {`Περιγραφή στα Ελληνικά`},en {`Description in English`},es {`Descripción en español`},t {`Kirjeldus eesti keeles`},fi {`Kuvaus suomeksi`},fr {`Description en français`},he {`תיאור בעברית`},hi {`विवरण हिंदी में`},hu {`Leírás magyarul`},id {`Deskripsi dalam bahasa Indonesia`},it {`Descrizione in italiano`},ja {`日本語での説明`},ko {`한국어 설명`},lt {`Aprašymas lietuvių kalba`},lv {`Apraksts latviešu valodā`},nl {`Beschrijving in het Nederlands`},no {`Beskrivelse på norsk`},pl {`Opis po polsku`},pt {`Descrição em português`},ro {`Descriere în română`},ru {`Описание на русском`},sk {`Popis v slovenčine`},sl {`Opis v slovenščini`},sv {`Beskrivning på svenska`},th {`คำอธิบายเป็นภาษาไทย`},tr {`Türkçe açıklama`},uk {`Опис українською`},vi {`Mô tả bằng tiếng Việt`},zh {`中文说明`}|},${0:}"
+            "${1|af {`Beskrywing in Afrikaans`},ar {`الوصف باللغة العربية`},bg {`Описание на български`},cs {`Popis v češtině`},da {`Beskrivelse på dansk`},de {`Beschreibung auf Deutsch`},el {`Περιγραφή στα Ελληνικά`},en {`Description in English`},es {`Descripción en español`},et {`Kirjeldus eesti keeles`},fi {`Kuvaus suomeksi`},fr {`Description en français`},he {`תיאור בעברית`},hi {`विवरण हिंदी में`},hu {`Leírás magyarul`},id {`Deskripsi dalam bahasa Indonesia`},it {`Descrizione in italiano`},ja {`日本語での説明`},ko {`한국어 설명`},lt {`Aprašymas lietuvių kalba`},lv {`Apraksts latviešu valodā`},nl {`Beschrijving in het Nederlands`},no {`Beskrivelse på norsk`},pl {`Opis po polsku`},pt {`Descrição em português`},ro {`Descriere în română`},ru {`Описание на русском`},sk {`Popis v slovenčine`},sl {`Opis v slovenščini`},sv {`Beskrivning på svenska`},th {`คำอธิบายเป็นภาษาไทย`},tr {`Türkçe açıklama`},uk {`Опис українською`},vi {`Mô tả bằng tiếng Việt`},zh-cn {`中文说明（简体）`},zh-tw {`中文說明（繁體）`}|},${0}"
         ]
     },
 	"Dobu: Insert All": {
