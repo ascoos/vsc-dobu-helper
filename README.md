@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://dl.ascoos.com/images/ascoos.png" height="120" alt="Ascoos OS" />
-</p>
+![DoBu](https//cdn.ascoos.com/images/dobu/dobu-logo-2.webp)
 
 # Ascoos DoBu Helper
 
@@ -155,7 +153,3 @@ This extension is distributed under the **AGL (Ascoos General License)**.
 See details here: [http://docs.ascoos.com/lics/ascoos/AGL.html](http://docs.ascoos.com/lics/ascoos/AGL.html)
 
 ---
-
-<p align="center">
-  <strong>Made with ❤️ for the Ascoos OS Community</strong>
-</p>
