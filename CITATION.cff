@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "Ascoos DoBu Helper"
+message: "If you use this extension in your work, please cite it as below."
+type: software
+
+authors:
+  - family-names: "Drogidis"
+    given-names: "Christos"
+    affiliation: "AlexSoft Software"
+
+repository-code: "https://github.com/ascoos/vsc-dobu-helper"
+url: "https://github.com/ascoos/vsc-dobu-helper"
+
+version: "0.0.4"
+date-released: "2026-05-07"
+
+keywords:
+  - DoBu
+  - ASCOOS OS
+  - VSCode Extension
+  - Documentation DSL
+  - Docblock Generator
+  - Developer Tools
+
+abstract: >
+  VSCode extension providing full DoBu DSL support for ASCOOS OS, including
+  docblock generation, class skeletons, metadata structures, and developer
+  productivity tools for deterministic documentation workflows.
+
+license: "AGL (Ascoos General License)"
+
+preferred-citation:
+  type: software
+  title: "Ascoos DoBu Helper"
+  authors:
+    - family-names: "Drogidis"
+      given-names: "Christos"
+  year: 2026
+  url: "https://github.com/ascoos/vsc-dobu-helper"
