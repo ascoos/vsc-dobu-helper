@@ -31,7 +31,7 @@ dobu {
                 el {`Παραδείγματα υλοποιήσεων που παρουσιάζουν τη χρήση μεταδεδομένων DoBu.`}
             },
             category:langs {
-                en {`Object‑oriented architecture`},
+                en {`Object-oriented architecture`},
                 el {`Αντικειμενοστρεφής αρχιτεκτονική`}
             },
             subcategory:langs {
@@ -85,7 +85,7 @@ dobu {
             el {`Μια ελάχιστη κλάση επίδειξης που παρουσιάζει τις δυνατότητες των μεταδεδομένων DoBu.`}
         },
         summary:langs {
-            en {`Provides a simple object with constructor and singleton‑style instance retrieval.`},
+            en {`Provides a simple object with constructor and singleton-style instance retrieval.`},
             el {`Παρέχει ένα απλό αντικείμενο με constructor και ανάκτηση παρουσίας τύπου singleton.`}
         },
         desc:langs {
