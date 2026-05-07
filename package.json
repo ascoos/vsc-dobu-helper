@@ -1,69 +1,49 @@
 {
-	"name": "vsc-dobu",
-	"author": "Chtistos Drogidis",
-	"publisher": "ascoos",
-	"displayName": "Ascoos DoBu Helper",
-	"description": "Helper for Documentation Builder",
-	"icon": "images/icon.png",
-	"license": "AGL (Ascoos General License)",
-	"version": "0.0.2",
-	"engines": {
-		"vscode": "^1.111.0"
-	},
-	"pricing": "Free",
-	"dependencies": {},
-	"categories": [
-		"Snippets"
-	],
-	"keywords": [
-		"ASCOOS",
-		"ascoos",
-		"OS",
-		"os",
-		"dobu",
-		"CMS",
-		"cms",
-		"Framework",
-		"PHP",
-		"php",
-		"CSS",
-		"CSS3",
-		"acss",
-		"Snippets",
-		"Templates",
-		"JAscoos"
-	],
-	"contributes": {
-		"snippets": [
-			{
-				"language": "cpp",
-				"path": "./snippets/dobu.json"
-			},
-			{
-				"language": "css",
-				"path": "./snippets/dobu.json"
-			},
-			{
-				"language": "js",
-				"path": "./snippets/dobu.json"
-			},
-			{
-				"language": "php",
-				"path": "./snippets/dobu.json"
-			},
-			{
-				"language": "plaintext",
-				"path": "./snippets/dobu.json"
-			}
-		]
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ascoos/dobu.git"
-	},
-	"bugs": {
-		"url": "https://issues.ascoos.com"
-	},
-	"readme": "https://github.com/ascoos/dobu/blob/main/README.md",
-	"homepage": "https://www.ascoos.com"
+  "name": "vsc-dobu",
+  "displayName": "Ascoos DoBu Helper",
+  "description": "Helper for Documentation Builder",
+  "version": "0.0.4",
+  "publisher": "ascoos",
+  "author": "Christos Drogidis",
+  "icon": "images/icon.png",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "vscode": "^1.111.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "ASCOOS",
+    "dobu",
+    "CMS",
+    "Framework",
+    "PHP",
+    "CSS",
+    "acss",
+    "Snippets",
+    "Templates",
+    "JAscoos"
+  ],
+  "galleryBanner": {
+    "color": "#1a1a1a",
+    "theme": "dark"
+  },
+  "contributes": {
+    "snippets": [
+      { "language": "cpp", "path": "./snippets/dobu.json" },
+      { "language": "css", "path": "./snippets/dobu.json" },
+      { "language": "js", "path": "./snippets/dobu.json" },
+      { "language": "php", "path": "./snippets/dobu.json" },
+      { "language": "plaintext", "path": "./snippets/dobu.json" }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ascoos/vsc-dobu-helper.git"
+  },
+  "bugs": {
+    "url": "https://issues.ascoos.com"
+  },
+  "homepage": "https://www.ascoos.com"
 }

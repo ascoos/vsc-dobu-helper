@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.0.4] - 2026-05-07
+
+- Fixed snippets
+
+## Added
+- Supported Metakeys: 
+    - License Attribute
+    - Difficulty Attribute
+    - Date Created Attribute
+    - Date Updated Attribute
+    
+---
+
+## [0.0.3] - 2026-05-05
+
+- Fixed snippets
+
+---
+
 ## [0.0.2] - 2026-05-01
 
 ## Added

@@ -313,7 +313,7 @@
 		]
 	},
 	"Dobu: Insert DoBu File Skeleton": {
-		"prefix": "@dobu-file-skeleton",
+		"prefix": "@dobu-skeleton-file",
 		"description": "[Dobu] Insert DoBu File Skeleton",
 		"body": [
 			"/*",
@@ -388,7 +388,7 @@
 	},
 
 	"Dobu: Insert DoBu Example File Skeleton": {
-		"prefix": "@dobu-file-example-skeleton",
+		"prefix": "@dobu-skeleton-file-example",
 		"description": "[Dobu] Insert DoBu Example File Skeleton",
 		"body": [
 			"/*",
@@ -440,35 +440,36 @@
     "description": "[DoBu] Insert class skeleton",
         "body": [
 			"dobu {",
-    		"class:id(``),name(``),extends(``),implements(``),namespace(`ASCOOS\\OS\\`),hierarchy(`TObject, `),version(`1.0.0`),build(``),since(`1.0.0`),sincePHP(`8.4.0`) {",
-		    "\tcategory:langs {",
-		    "\t\ten {``},",
-        	"\t\tel {``}",
-		    "\t},",
-        	"\tintro:langs {",
-		    "\t\ten {``},",
-        	"\t\tel {``}",
-        	"\t},",
-		    "\tsummary:langs {",
-        	"\t\ten {``},",
-		    "\t\tel {``}",
-        	"\t},",
-		    "\tdesc:langs {",
-        	"\t\ten {``},",
-		    "\t\tel {``}",
-        	"\t},",
-		    "\tmethods:active(`idx,toc`) {",
-        	"\t\tmethod:id(`construct`),name(`__construct`),syntax(`__construct(array $properties = [])`),return(`void`),langs {",
-            "\t\t\ten {`Initializes the class with an array, and optional properties.`},",
-		    "\t\t\tel {`Αρχικοποιεί την κλάση με έναν πίνακα και προαιρετικές ιδιότητες.`}",
-        	"\t\t},",
-		    "\t\tmethod:id(`getinstance`),name(`getInstance`),syntax(`&getInstance(array $properties = []): TMyClass`),return(`TMyClass&`),langs {",
-        	"\t\t\ten {`We see if the object is already loaded, otherwise we create a new load of the object`},",
-            "\t\t\tel {`Βλέπουμε εάν υπάρχει ήδη φορτωμένο το αντικείμενο αλλιώς δημιουργούμε μια νέα φόρτωση του αντικειμένου`}",
+    		"\tclass:id(``),name(``),extends(``),implements(``),namespace(`ASCOOS\\OS\\`),hierarchy(`TObject, `),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`AGL (Ascoos General License)`),difficulty(`1`) {",
+		    "\t\tcategory:langs {",
+		    "\t\t\ten {``},",
+        	"\t\t\tel {``}",
 		    "\t\t},",
-			"\t\t${0:}",
-        	"\t}",
-    		"}"
+        	"\t\tintro:langs {",
+		    "\t\t\ten {``},",
+        	"\t\t\tel {``}",
+        	"\t\t},",
+		    "\t\tsummary:langs {",
+        	"\t\t\ten {``},",
+		    "\t\t\tel {``}",
+        	"\t\t},",
+		    "\t\tdesc:langs {",
+        	"\t\t\ten {``},",
+		    "\t\t\tel {``}",
+        	"\t\t},",
+		    "\t\tmethods:active(`idx,toc`) {",
+        	"\t\t\tmethod:id(`construct`),name(`__construct`),syntax(`__construct(array $properties = [])`),return(`void`),langs {",
+            "\t\t\t\ten {`Initializes the class with an array, and optional properties.`},",
+		    "\t\t\t\tel {`Αρχικοποιεί την κλάση με έναν πίνακα και προαιρετικές ιδιότητες.`}",
+        	"\t\t\t},",
+		    "\t\t\tmethod:id(`getinstance`),name(`getInstance`),syntax(`&getInstance(array $properties = []): TMyClass`),return(`TMyClass&`),langs {",
+        	"\t\t\t\ten {`We see if the object is already loaded, otherwise we create a new load of the object`},",
+            "\t\t\t\tel {`Βλέπουμε εάν υπάρχει ήδη φορτωμένο το αντικείμενο αλλιώς δημιουργούμε μια νέα φόρτωση του αντικειμένου`}",
+		    "\t\t\t},",
+			"\t\t\t${0:}",
+        	"\t\t}",
+    		"\t}",
+            "}"
         ]
     },
        
@@ -552,7 +553,7 @@
     "description": "[DoBu] Insert Constant skeleton",
     "body": [
         "dobu {",
-        "\tconstant:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),since(`1.0.0`),sincePHP(`8.4.0`) {",
+        "\tconstant:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`AGL (Ascoos General License)`),difficulty(`1`) {",
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -620,7 +621,7 @@
     "description": "[DoBu] Insert property skeleton",
     "body": [
         "dobu {",
-        "\tproperty:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),since(`1.0.0`),sincePHP(`8.4.0`) {",
+        "\tproperty:classid(``),id(``),name(``),access(`protected`),type(``),default(``),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`AGL (Ascoos General License)`),difficulty(`1`) {",
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -648,7 +649,7 @@
     "description": "[DoBu] Insert method skeleton",
     "body": [
         "dobu {",
-        "\tmethod:classid(``),id(``),name(``),syntax(``),return(``),version(`1.0.0`),build(``),sincePHP(`8.4.0`) {",
+        "\tmethod:classid(``),id(``),name(``),syntax(``),return(``),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`AGL (Ascoos General License)`),difficulty(`1`) {",
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -792,9 +793,9 @@
         "},${0:}"
         ]
 	},
-	"Dobu: Insert agnostic metakey in method skeleton": {
-    "prefix": "@dobu-agnostic-method-skeleton",
-    "description": "[DoBu] Insert agnostic metakey in method skeleton",
+	"Dobu: Insert agnostic metakey in method": {
+    "prefix": "@dobu-agnostic-method",
+    "description": "[DoBu] Insert agnostic metakey in method",
     "body": [
         "${1:Metakey}:active(``),langs {",
         "\ten {`${2:Metakey description in English}`},",
@@ -866,35 +867,35 @@
 	},
 
 	"Dobu: Insert Skeleton License": {
-    "prefix": "@dobu-skeleton-license",
+    "prefix": "@dobu-license-skeleton",
     "description": "[DoBu] Insert Skeleton License",
         "body": [
 			"license {`${1|AGL (ASCOOS General License),AGL-F (ASCOOS General License - FREE),AGL-E (ASCOOS General Extension License),AGL-T (ASCOOS General Theme License),Freeware,Unlicensed,MIT,CC BY 4.0,CC BY-SA 4.0,CC BY-NC 4.0,CC BY-NC-SA 4.0,CC BY-ND 4.0,CC BY-NC-ND 4.0,CC0 1.0|}`},${0:}"
         ]
 	},
 	"Dobu: Insert Skeleton Since": {
-    "prefix": "@dobu-skeleton-since",
+    "prefix": "@dobu-since-skeleton",
     "description": "[DoBu] Insert Skeleton Since",
         "body": [
 			"since {`${1:1}.${2:0}.${3:0}`},${0:}"
         ]
 	},
 	"Dobu: Insert Skeleton SincePHP": {
-    "prefix": "@dobu-skeleton-since-php",
+    "prefix": "@dobu-since-php-skeleton",
     "description": "[DoBu] Insert Skeleton SincePHP",
         "body": [
 			"sincePHP {`${1:8}.${2:4}.${3:0}`},${0:}"
         ]
 	},
 	"Dobu: Insert Skeleton Used Class": {
-    "prefix": "@dobu-skeleton-used-class",
+    "prefix": "@dobu-used-class-skeleton",
     "description": "[DoBu] Insert Skeleton Used Class",
         "body": [
 			"class {`${1:Class}`},${0:}"
         ]
 	},
 	"Dobu: Insert Skeleton Used Methods": {
-    "prefix": "@dobu-skeleton-used-methods",
+    "prefix": "@dobu-used-methods-skeleton",
     "description": "[DoBu] Insert Skeleton Used Methods",
         "body": [
 			"methods {`${1:MethodsClass}`},${0:}"
@@ -912,10 +913,10 @@
 	},
 
 	"Dobu: Insert Skeleton Examples": {
-    "prefix": "@dobu-skeleton-examples",
+    "prefix": "@dobu-examples-skeleton",
     "description": "[DoBu] Insert Skeleton Examples",
     	"body": [
-            "examples:type(``)",
+            "examples:type(`link`)",
             "${1:\tlink(`${2:Example Link}`),langs {",
             "\t\ten {`${3:Description of the example link in English}`},",
             "\t\tel {`${4:Περιγραφή του συνδέσμου παραδείγματος στα Ελληνικά}`}",
@@ -991,7 +992,7 @@
 	},
 
 	"Dobu: Insert Skeleton Language": {
-    "prefix": "@dobu-skeleton-lang",
+    "prefix": "@dobu-lang-skeleton",
     "description": "[DoBu] Insert Skeleton Language",
         "body": [
         "langs {",
@@ -1004,42 +1005,7 @@
     "prefix": "@dobu-lang",
         "description": "[DoBu] Insert Language",
         "body": [
-            "${1:|af {`Beskrywing in Afrikaans`},",
-            "ar {`الوصف باللغة العربية`},",
-            "bg {`Описание на български`},",
-            "cs {`Popis v češtině`},",
-            "da {`Beskrivelse på dansk`},",
-            "de {`Beschreibung auf Deutsch`},",
-            "el {`Περιγραφή στα Ελληνικά`},",
-            "en {`Description in English`},",
-            "es {`Descripción en español`},",
-            "et {`Kirjeldus eesti keeles`},",
-            "fi {`Kuvaus suomeksi`},",
-            "fr {`Description en français`},",
-            "he {`תיאור בעברית`},",
-            "hi {`विवरण हिंदी में`},",
-            "hu {`Leírás magyarul`},",
-            "id {`Deskripsi dalam bahasa Indonesia`},",
-            "it {`Descrizione in italiano`},",
-            "ja {`日本語での説明`},",
-            "ko {`한국어 설명`},",
-            "lt {`Aprašymas lietuvių kalba`},",
-            "lv {`Apraksts latviešu valodā`},",
-            "nl {`Beschrijving in het Nederlands`},",
-            "no {`Beskrivelse på norsk`},",
-            "pl {`Opis po polsku`},",
-            "pt {`Descrição em português`},",
-            "ro {`Descriere în română`},",
-            "ru {`Описание на русском`},",
-            "sk {`Popis v slovenčine`},",
-            "sl {`Opis v slovenščini`},",
-            "sv {`Beskrivning på svenska`},",
-            "th {`คำอธิบายเป็นภาษาไทย`},",
-            "tr {`Türkçe açıklama`},",
-            "uk {`Опис українською`},",
-            "vi {`Mô tả bằng tiếng Việt`},",
-            "zh {`中文说明`},|",
-            "},${0:}"
+            "${1:|af {`Beskrywing in Afrikaans`},ar {`الوصف باللغة العربية`},bg {`Описание на български`},cs {`Popis v češtině`},da {`Beskrivelse på dansk`},de {`Beschreibung auf Deutsch`},el {`Περιγραφή στα Ελληνικά`},en {`Description in English`},es {`Descripción en español`},t {`Kirjeldus eesti keeles`},fi {`Kuvaus suomeksi`},fr {`Description en français`},he {`תיאור בעברית`},hi {`विवरण हिंदी में`},hu {`Leírás magyarul`},id {`Deskripsi dalam bahasa Indonesia`},it {`Descrizione in italiano`},ja {`日本語での説明`},ko {`한국어 설명`},lt {`Aprašymas lietuvių kalba`},lv {`Apraksts latviešu valodā`},nl {`Beschrijving in het Nederlands`},no {`Beskrivelse på norsk`},pl {`Opis po polsku`},pt {`Descrição em português`},ro {`Descriere în română`},ru {`Описание на русском`},sk {`Popis v slovenčine`},sl {`Opis v slovenščini`},sv {`Beskrivning på svenska`},th {`คำอธิบายเป็นภาษาไทย`},tr {`Türkçe açıklama`},uk {`Опис українською`},vi {`Mô tả bằng tiếng Việt`},zh {`中文说明`}|},${0:}"
         ]
     },
 	"Dobu: Insert All": {
@@ -1049,6 +1015,40 @@
 			"all {`${1:Text}`}",
             "${0:}"
         ]
-	}
-                
+	},
+	"Dobu: Insert Date Created Attribute": {
+    "prefix": "@dobu-created",
+    "description": "[DoBu] Insert Date Created Attribute",
+        "body": [
+			"created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),${0:}"
+        ]
+	},
+	"Dobu: Insert Date Updated Attribute": {
+    "prefix": "@dobu-updated",
+    "description": "[DoBu] Insert Date Updated Attribute",
+        "body": [
+			"updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),${0:}"
+        ]
+	},
+	"Dobu: Insert Linense Attribute": {
+    "prefix": "@dobu-license-attribute",
+    "description": "[DoBu] Insert License Attribute",
+        "body": [
+			"license(`${1|AGL (ASCOOS General License),AGL-F (ASCOOS General License - FREE),AGL-E (ASCOOS General Extension License),AGL-T (ASCOOS General Theme License),Freeware,Unlicensed,MIT,CC BY 4.0,CC BY-SA 4.0,CC BY-NC 4.0,CC BY-NC-SA 4.0,CC BY-ND 4.0,CC BY-NC-ND 4.0,CC0 1.0|}`),${0:}"
+        ]
+	},
+	"Dobu: Insert Skeleton Difficulty": {
+    "prefix": "@dobu-difficulty-skeleton",
+    "description": "[DoBu] Insert Difficulty",
+        "body": [
+			"difficulty {`${1|0,1,2,3,4,5|}`},${0:}"
+        ]
+	},
+	"Dobu: Insert Difficulty Atrribute": {
+    "prefix": "@dobu-difficulty-attribute",
+    "description": "[DoBu] Insert Difficulty Attribute",
+        "body": [
+			"difficulty(`${1|0,1,2,3,4,5|}`),${0:}"
+        ]
+	}               
 }
