@@ -75,7 +75,7 @@ use ASCOOS\OS\Kernel\Core\TObject;
 
 /*
 dobu {
-    class:id(`tmyclass`),name(`TMyClass`),extends(`TObject`)namespace(`ASCOOS\OS\Extras\NAMESPACE`),hierarchy(`TObject, TMyClass`),version(`1.0.0`),build(`1`),created(`2026-05-07 17:14:54`),updated(`2026-05-07 17:14:54`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`Freeware`),difficulty(`1`) {
+    class:id(`tmyclass`),name(`TMyClass`),extends(`TObject`)namespace(`ASCOOS\OS\Extras\NAMESPACE`),hierarchy(`TObject, TMyClass`),version(`1.0.0`),build(`1`),created(`2026-05-07 17:14:54`),updated(`2026-05-07 17:14:54`),since(`1.0.0`),sincePHP(`8.4.0`),license(`Freeware`),difficulty(`1`) {
         category:langs {
             en {`Core example class`},
             el {`Κεντρική κλάση παραδείγματος`}
@@ -130,7 +130,7 @@ class TMyClass extends TObject
 
     /*
     dobu {
-        method:classid(`tmyclass`),id(`construct`),name(`__construct`),syntax(`__construct(array $properties = [])`),return(`void`),version(`1.0.0`),build(`1`),created(`2026-05-07 17:16:35`),updated(`2026-05-07 17:16:35`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`Freeware`),difficulty(`1`) {
+        method:classid(`tmyclass`),id(`construct`),name(`__construct`),syntax(`__construct(array $properties = [])`),return(`void`),version(`1.0.0`),build(`1`),created(`2026-05-07 17:16:35`),updated(`2026-05-07 17:16:35`),since(`1.0.0`),sincePHP(`8.4.0`),license(`Freeware`),difficulty(`1`) {
             category:langs {
                 en {`Object initialization`},
                 el {`Αρχικοποίηση αντικειμένου`}
@@ -181,7 +181,7 @@ class TMyClass extends TObject
     
     /*
     dobu {
-        method:classid(`tmyclass`),id(`getinstance`),name(`getInstance`),syntax(`&getInstance(array $properties = []): TMyClass`),return(`TMyClass&`),version(`1.0.0`),build(`1`),created(`2026-05-07 17:21:14`),updated(`2026-05-07 17:21:14`),since(`1.0.0`),sincePHP(`8.4.0`),licence(`Freeware`),difficulty(`1`) {
+        method:classid(`tmyclass`),id(`getinstance`),name(`getInstance`),syntax(`&getInstance(array $properties = []): TMyClass`),return(`TMyClass&`),version(`1.0.0`),build(`1`),created(`2026-05-07 17:21:14`),updated(`2026-05-07 17:21:14`),since(`1.0.0`),sincePHP(`8.4.0`),license(`Freeware`),difficulty(`1`) {
             category:langs {
                 en {`Singleton instance retrieval`},
                 el {`Ανάκτηση μοναδικής παρουσίας`}
