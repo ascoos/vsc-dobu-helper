@@ -726,12 +726,9 @@
         "\t\ten {`Examples`},",
         "\t\tel {`Παραδείγματα`}",
         "\t},",
-        "${2:\tlink(`${3:Example Link}`),langs {",
-        "\t\ten {`${4:Description of the example link in English}`},",
-        "\t\tel {`${5:Περιγραφή του συνδέσμου παραδείγματος στα Ελληνικά}`}",
-        "\t},}",
+        "${2:\tlink(`${3:Example Link}`),langs {\n\t\ten {`${4:Description of the example link in English}`\\},\n\t\tel {`${5:Περιγραφή του συνδέσμου παραδείγματος στα Ελληνικά}`\\}\n\t\\},}",
         "\texample:type(`pre,code`),pl(`php`),langs {",
-        "\t\tall {``}",
+        "\t\tall {`${6:Example Code}`}",
         "\t}",
         "},${0:}"
         ]
@@ -943,12 +940,9 @@
             "\t\ten {`Examples`},",
             "\t\tel {`Παραδείγματα`}",
             "\t},",
-            "${2:\tlink(`${3:Example Link}`),langs {",
-            "\t\ten {`${4:Description of the example link in English}`},",
-            "\t\tel {`${5:Περιγραφή του συνδέσμου παραδείγματος στα Ελληνικά}`}",
-            "\t},}",
-        	"\texample:type(`pre,code`)${5:,pl(`php`)},langs {",
-            "\t\tall {``}",
+            "${2:\tlink(`${3:Example Link}`),langs {\n\t\ten {`${4:Description of the example link in English}`\\},\n\t\tel {`${5:Περιγραφή του συνδέσμου παραδείγματος στα Ελληνικά}`\\}\n\t\\},}",
+        	"\texample:type(`pre,code`)${6:,pl(`php`)},langs {",
+            "\t\tall {`${7:Example Code}`}",
             "\t}",
             "},${0:}"
         ]
