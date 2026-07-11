@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.5] - 2026-07-11
+
+- Fixed and upgrated snippets
+
+## Added
+- Supported Metakeys: 
+    - Build Created Attribute
+    - Build Created Metakey
+    
+---
+
 ## [0.0.4] - 2026-05-07
 
 - Fixed snippets

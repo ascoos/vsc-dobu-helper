@@ -161,6 +161,13 @@
 			"build {`${1:Build Number}`},${0:}"
         ]
 	},
+	"Dobu: Insert Skeleton Build Created": {
+    "prefix": "@dobu-skeleton-build-created",
+    "description": "[DoBu] Insert Skeleton Build",
+        "body": [
+			"buildCreated {`${1:Build Created Number}`},${0:}"
+        ]
+	},
 	"Dobu: Insert Skeleton Source": {
     "prefix": "@dobu-skeleton-source",
     "description": "[DoBu] Insert Skeleton Source",
@@ -291,20 +298,21 @@
 			"\t\t\tfileNo {`${1:FILE-ID}`},",
 			"\t\t\tversion {`${18:1}.${19:0}.${20:0}`},",
 			"\t\t\tbuild {`${21:1}`},",
+            "\t\t\tbuildCreated {`${22:1}`},",
 			"\t\t\tcreated {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},",
 			"\t\t\tupdated {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},",
-			"\t\t\tauthor {`${22:AUTHOR NAME}`},",
-			"\t\t\tauthorSite {`${23:https://www.ascoos.com}`},",
-			"\t\t\tsupport {`${24:support@ascoos.com}`},",
-			"\t\t\tlicense {`${25|AGL (ASCOOS General License),AGL-F (ASCOOS General License - FREE),AGL-E (ASCOOS General Extension License),AGL-T (ASCOOS General Theme License),Freeware,Unlicensed,MIT,CC BY 4.0,CC BY-SA 4.0,CC BY-NC 4.0,CC BY-NC-SA 4.0,CC BY-ND 4.0,CC BY-NC-ND 4.0,CC0 1.0|}`},",
-			"\t\t\tsince {`${26:1}.${27:0}.${28:0}`},",
-			"\t\t\tsincePHP {`${29:8}.${30:4}.${31:0}`}",
+			"\t\t\tauthor {`${23:AUTHOR NAME}`},",
+			"\t\t\tauthorSite {`${24:https://www.ascoos.com}`},",
+			"\t\t\tsupport {`${25:support@ascoos.com}`},",
+			"\t\t\tlicense {`${26|AGL (ASCOOS General License),AGL-F (ASCOOS General License - FREE),AGL-E (ASCOOS General Extension License),AGL-T (ASCOOS General Theme License),Freeware,Unlicensed,MIT,CC BY 4.0,CC BY-SA 4.0,CC BY-NC 4.0,CC BY-NC-SA 4.0,CC BY-ND 4.0,CC BY-NC-ND 4.0,CC0 1.0|}`},",
+			"\t\t\tsince {`${27:1}.${28:0}.${29:0}`},",
+			"\t\t\tsincePHP {`${30:8}.${31:4}.${32:0}`}",
 			"\t\t}",		
 			"\t}",
 			"}",
 			"*/",
 			"declare(strict_types=1);",
-			"namespace ASCOOS\\OS${34:${33|\\Extras\\\\,\\Kernel\\\\,\\Library\\\\|}${32:NAMESPACE}};",
+			"namespace ASCOOS\\OS${35:${34|\\Extras\\\\,\\Kernel\\\\,\\Library\\\\|}${33:NAMESPACE}};",
 			"defined(\"ALEXSOFT_RUN_CMS\") or die(\"Prohibition of Access.\");",
 			"defined(\"ASCOOS_OS_RUN\") or die(\"Prohibition of Access.\");",
 			"",
@@ -371,14 +379,15 @@
 			"\t\t\tfileNo {`${1:FILE-ID}`},",
 			"\t\t\tversion {`${18:1}.${19:0}.${20:0}`},",
 			"\t\t\tbuild {`${21:1}`},",
+            "\t\t\tbuildCreated {`${22:1}`},",
 			"\t\t\tcreated {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},",
 			"\t\t\tupdated {`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`},",
-			"\t\t\tauthor {`${22:AUTHOR NAME}`},",
-			"\t\t\tauthorSite {`${23:https://www.ascoos.com}`},",
-			"\t\t\tsupport {`${24:support@ascoos.com}`},",
-			"\t\t\tlicense {`${25|AGL (ASCOOS General License),AGL-F (ASCOOS General License - FREE),AGL-E (ASCOOS General Extension License),AGL-T (ASCOOS General Theme License),Freeware,Unlicensed,MIT,CC BY 4.0,CC BY-SA 4.0,CC BY-NC 4.0,CC BY-NC-SA 4.0,CC BY-ND 4.0,CC BY-NC-ND 4.0,CC0 1.0|}`},",
-			"\t\t\tsince {`${26:1}.${27:0}.${28:0}`},",
-			"\t\t\tsincePHP {`${29:8}.${30:4}.${31:0}`}",
+			"\t\t\tauthor {`${23:AUTHOR NAME}`},",
+			"\t\t\tauthorSite {`${24:https://www.ascoos.com}`},",
+			"\t\t\tsupport {`${25:support@ascoos.com}`},",
+			"\t\t\tlicense {`${26|AGL (ASCOOS General License),AGL-F (ASCOOS General License - FREE),AGL-E (ASCOOS General Extension License),AGL-T (ASCOOS General Theme License),Freeware,Unlicensed,MIT,CC BY 4.0,CC BY-SA 4.0,CC BY-NC 4.0,CC BY-NC-SA 4.0,CC BY-ND 4.0,CC BY-NC-ND 4.0,CC0 1.0|}`},",
+			"\t\t\tsince {`${27:1}.${28:0}.${29:0}`},",
+			"\t\t\tsincePHP {`${30:8}.${31:4}.${32:0}`}",
 			"\t\t}",		
 			"\t}",
 			"}",
@@ -441,7 +450,7 @@
         "body": [
             "/*",
 			"dobu {",
-    		"\tclass:id(``),name(``),extends(``),implements(``),namespace(`ASCOOS\\OS\\`),hierarchy(`TObject, `),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
+    		"\tclass:id(``),name(``),extends(``),implements(``),namespace(`ASCOOS\\OS\\`),hierarchy(`TObject, `),version(`1.0.0`),build(``),buildCreated(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
 		    "\t\tcategory:langs {",
 		    "\t\t\ten {``},",
         	"\t\t\tel {``}",
@@ -555,7 +564,7 @@
     "description": "[DoBu] Insert Constant skeleton",
     "body": [
         "dobu {",
-        "\tconstant:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
+        "\tconstant:classid(``),id(``),name(``), access(`protected`),type(``),default(``), version(`1.0.0`),build(``),buildCreated(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -625,7 +634,7 @@
     "description": "[DoBu] Insert property skeleton",
     "body": [
         "dobu {",
-        "\tproperty:classid(``),id(``),name(``),access(`protected`),type(``),default(``),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
+        "\tproperty:classid(``),id(``),name(``),access(`protected`),type(``),default(``),version(`1.0.0`),build(``),buildCreated(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -653,7 +662,7 @@
     "description": "[DoBu] Insert method skeleton",
     "body": [
         "dobu {",
-        "\tmethod:classid(``),id(``),name(``),syntax(``),return(``),version(`1.0.0`),build(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
+        "\tmethod:classid(``),id(``),name(``),syntax(``),return(``),version(`1.0.0`),build(``),buildCreated(``),created(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),updated(`$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND`),since(`1.0.0`),sincePHP(`8.4.0`),license(`AGL (Ascoos General License)`),difficulty(`1`) {",
         "\t\tcategory:langs {",
         "\t\t\ten {``},",
         "\t\t\tel {``}",
@@ -712,10 +721,19 @@
     "prefix": "@dobu-example-method-skeleton",
     "description": "[DoBu] Insert example in method skeleton",
     "body": [
-        "example:type(`pre,code`),langs {",
-        "\tall {``}",
-        "},",
-        "${0:}"
+        "examples:type(`${1|single,link,tab,multi|}`) {",
+        "\tlangs {",
+        "\t\ten {`Examples`},",
+        "\t\tel {`Παραδείγματα`}",
+        "\t},",
+        "${2:\tlink(`${3:Example Link}`),langs {",
+        "\t\ten {`${4:Description of the example link in English}`},",
+        "\t\tel {`${5:Περιγραφή του συνδέσμου παραδείγματος στα Ελληνικά}`}",
+        "\t},}",
+        "\texample:type(`pre,code`),pl(`php`),langs {",
+        "\t\tall {``}",
+        "\t}",
+        "},${0:}"
         ]
 	},
 	"Dobu: Insert keys": {
@@ -919,17 +937,20 @@
 	"Dobu: Insert Skeleton Examples": {
     "prefix": "@dobu-examples-skeleton",
     "description": "[DoBu] Insert Skeleton Examples",
-    	"body": [
-            "examples:type(`link`)",
-            "${1:\tlink(`${2:Example Link}`),langs {",
-            "\t\ten {`${3:Description of the example link in English}`},",
-            "\t\tel {`${4:Περιγραφή του συνδέσμου παραδείγματος στα Ελληνικά}`}",
+        "body": [
+            "examples:type(`${1|single,link,tab,multi|}`) {",
+            "\tlangs {",
+            "\t\ten {`Examples`},",
+            "\t\tel {`Παραδείγματα`}",
+            "\t},",
+            "${2:\tlink(`${3:Example Link}`),langs {",
+            "\t\ten {`${4:Description of the example link in English}`},",
+            "\t\tel {`${5:Περιγραφή του συνδέσμου παραδείγματος στα Ελληνικά}`}",
             "\t},}",
         	"\texample:type(`pre,code`)${5:,pl(`php`)},langs {",
-	        "\t\tall {``}",
-        	"\t},",
-            "}",
-            "${0:}"
+            "\t\tall {``}",
+            "\t}",
+            "},${0:}"
         ]
 	},
 	"Dobu: Insert Link": {

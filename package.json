@@ -2,7 +2,7 @@
   "name": "vsc-dobu",
   "displayName": "Ascoos DoBu Helper",
   "description": "Helper for Documentation Builder",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "ascoos",
   "author": "Christos Drogidis",
   "icon": "images/icon.png",
@@ -42,8 +42,5 @@
     "type": "git",
     "url": "https://github.com/ascoos/vsc-dobu-helper.git"
   },
-  "bugs": {
-    "url": "https://issues.ascoos.com"
-  },
-  "homepage": "https://www.ascoos.com"
+  "homepage": "https://dobu.ascoos.com"
 }
